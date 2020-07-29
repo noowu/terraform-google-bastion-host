@@ -197,3 +197,9 @@ variable "disk_type" {
   description = "Boot disk type, can be either pd-ssd, local-ssd, or pd-standard"
   default     = "pd-standard"
 }
+
+variable "create_iap_fw_rule" {
+  description = "Create a firewall rule to allow SSH from IAP."
+  type        = bool
+  default     = true
+}

@@ -62,3 +62,9 @@ variable "additional_ports" {
   type        = list(string)
   default     = []
 }
+
+variable "create_iap_fw_rule" {
+  description = "Create a firewall rule to allow SSH from IAP."
+  type        = bool
+  default     = true
+}

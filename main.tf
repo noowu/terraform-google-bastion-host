@@ -96,6 +96,7 @@ module "iap_tunneling" {
     zone = var.zone
   }] : []
   members = var.members
+  create_iap_fw_rule = var.create_iap_fw_rule
 }
 
 resource "google_service_account_iam_binding" "bastion_sa_user" {
